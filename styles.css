@@ -1,9 +1,18 @@
-* {
+* {                        /* This (*) is a universal selector, declarations apply to all elements in the doc*/
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
+    background-color: #131313;
   }
+
+h1, h2, h3, h4 {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
 
 .navbar {
     background: #131313;
@@ -89,11 +98,11 @@
 }
 
 .button:hover {
-    background: #ff1493;        /* Hmm pink (#ff1493) or teal (#008080)? */
+    background: #ff1493;
     transition: all 0.3s ease;
 }
 
-.navbar__links:hover {
+.navbar__links:hover {    /* Hmm pink (#ff1493) or teal (#008080)? */
     color: #ff1493;
     transition: all 0.3s ease;
 }
