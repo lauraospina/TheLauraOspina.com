@@ -119,14 +119,15 @@ p {
         padding: 0;
     }
 
+    /* Off-screen Menu */
     .navbar__menu {
         display: grid;
         grid-template-columns: auto;
         margin: 0;
         width: 100%;
         position: absolute;
-/*        top: -1000px;*/
-/*        opacity: 0;*/
+        top: -1000px;
+        opacity: 0;           /* Opacity 0 because this is our offscreen menu */
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
@@ -143,19 +144,20 @@ p {
         font-size: 1.6rem;
     }
 
-    #navbar__logo {
+    #navbar__logo {             /* Moves the logo to the right a little, giving it space on the left*/
         padding-left: 25px;
     }
 
-    .navbar__toggle.bar {
+    /* Visible menu*/
+    .navbar__toggle .bar {
         width: 25px;
-        height: 3 px;
+        height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
         background: #fff;
     }
 
-    .navbar_item {
+    .navbar__item {
         width: 100%;
     }
 
@@ -173,7 +175,7 @@ p {
         transform: translate(5%, 20%);
     }
 
-    .navbar_btn {
+    .navbar__btn {
         padding-bottom: 2rem;
     }
 
@@ -191,6 +193,17 @@ p {
         cursor: pointer;
     }
 
+    /* The hamburger menu animation*/
+    #mobile-menu.is-active .bar:nth-child(2) {      /* JavaScript will be called with .is-active*/
+        opacity: 0;
+    }
 
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
 
