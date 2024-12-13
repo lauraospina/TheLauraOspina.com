@@ -205,5 +205,30 @@ p {
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+
+
+
+
+
+    /* Contact Information section*/
+
+    img.align-left {
+        float: left;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    img.align-center {
+        width:200px;
+        height:200px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -100px;
+    }
+
 }
 
