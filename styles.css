@@ -188,7 +188,7 @@ p {
         margin: 0;
     }
 
-    .navbar__toggle .bar {             /* The hamburger icon should be displaying, but isn't */
+    .navbar__toggle .bar {             /* The hamburger icon should be displaying now*/
         display: block;
         cursor: pointer;
     }
