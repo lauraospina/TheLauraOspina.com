@@ -230,5 +230,13 @@ p {
         margin-left: -100px;
     }
 
+
+    /* Formatting the text on the Home page*/
+
+    /* TODO: Trying to make the paragraph text + heading not touch the edge of the webpage. NOt working when in full screen*/
+    body {
+        padding:10px;
+    }
+
 }
 
